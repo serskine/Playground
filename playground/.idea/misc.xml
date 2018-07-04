@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0">
+      <entry_point TYPE="field" FQNAME="com.soupthatisthick.app.util.podam.RandomUtil random" />
+    </entry_points>
+    <pattern value="com.soupthatisthick.app.util.json.JsonUtil" method="prettyPrintUglyJsonString" />
+    <pattern value="com.soupthatisthick.app.util.json.JsonUtil" method="toJson" />
+    <pattern value="com.soupthatisthick.app.util.json.JsonUtil" method="toObject" />
+    <pattern value="com.soupthatisthick.app.util.json.JsonObjectMapper" method="getInstance" />
+    <pattern value="com.soupthatisthick.app.util.json.JsonObjectMapper" method="toJson" />
+    <pattern value="com.soupthatisthick.app.util.podam.PodamUtil" method="manufactureList" />
+    <pattern value="com.soupthatisthick.app.util.podam.PodamUtil" method="manufacture" />
+    <pattern value="com.soupthatisthick.app.util.podam.RandomUtil" method="randomString" />
+    <pattern value="com.soupthatisthick.app.util.podam.RandomUtil" method="randLong" />
+    <pattern value="com.soupthatisthick.app.util.podam.RandomUtil" method="randInt" />
+    <pattern value="com.soupthatisthick.app.util.podam.ResourceUtil" method="getPath" />
+    <pattern value="com.soupthatisthick.app.util.podam.ResourceUtil" method="getAsFile" />
+    <pattern value="com.soupthatisthick.app.util.podam.ResourceUtil" method="copyResourceToTempFile" />
+    <pattern value="com.soupthatisthick.app.util.podam.ResourceUtil" method="readResourceIntoString" />
+  </component>
+  <component name="PreferredVcsStorage">
+    <preferredVcsName>ApexVCS</preferredVcsName>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
