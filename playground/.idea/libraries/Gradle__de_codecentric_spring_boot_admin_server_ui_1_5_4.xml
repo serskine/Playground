@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: de.codecentric:spring-boot-admin-server-ui:1.5.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.codecentric/spring-boot-admin-server-ui/1.5.4/dc24eb8c8b8e5ed386057560bc38f171e2be86f6/spring-boot-admin-server-ui-1.5.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.codecentric/spring-boot-admin-server-ui/1.5.4/e46af233dec04593684059464dd90f843d03c23f/spring-boot-admin-server-ui-1.5.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

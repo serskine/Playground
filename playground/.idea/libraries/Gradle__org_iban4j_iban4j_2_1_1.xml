@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.iban4j:iban4j:2.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.iban4j/iban4j/2.1.1/5e5d0611870fb4733fb2fcf8834318960068d901/iban4j-2.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.iban4j/iban4j/2.1.1/cb8ac274e90b8e7f2b11d60a32a43274e2865d31/iban4j-2.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
