@@ -2,17 +2,22 @@ package com.soupthatisthick.playground.features.log;
 
 import com.soupthatisthick.playground.features.base.BaseRequest;
 import com.soupthatisthick.playground.features.base.BaseService;
-import com.soupthatisthick.playground.features.log.model.ListLogsRequest;
-import com.soupthatisthick.playground.features.log.model.LogEntity;
-import com.soupthatisthick.playground.features.log.model.LogEntry;
-import com.soupthatisthick.playground.features.log.model.PurgeLogsRequest;
+import com.soupthatisthick.playground.features.log.model.*;
 import com.soupthatisthick.playground.util.json.JsonUtil;
+import com.soupthatisthick.playground.util.logger.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.annotation.Nullable;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 
 @Service
@@ -22,16 +27,26 @@ public class LogService extends BaseService {
 	private LogRepository logRepository;
 
 	@Transactional
-	public LogEntry create(
-		@NotNull String endpoint,
-		@NotNull RequestMethod method,
-		@NotNull BaseRequest request
-	) {
+	public LogEntry create(@NotNull HttpServletRequest request) throws MalformedURLException {
+		final SimpleHttpServletRequestSnapshot snapshotRequest = new SimpleHttpServletRequestSnapshot(request);
+
 		LogEntity logEntity = new LogEntity();
 
-		logEntity.setEndpoint(endpoint);
-		logEntity.setMethod(method);
-		logEntity.setRequest(JsonUtil.toJson(request));
+
+		logEntity.setMethod(snapshotRequest.getMethod());
+
+		logEntity.setRequestedUrl(request.getRequestURL().toString());
+
+		logEntity.setRemoteUser(request.getRemoteUser());
+		logEntity.setRemoteAddress(request.getRemoteAddr());
+		logEntity.setRemoteHost(request.getRemoteHost());
+		logEntity.setRemotePort(request.getRemotePort());
+
+		final String asJson = JsonUtil.toJson(snapshotRequest, true, true);
+
+		Logger.LOG.debug("\n{}", asJson);
+
+		logEntity.setRequest(asJson);
 
 		return new LogEntry(logRepository.save(logEntity));
 	}

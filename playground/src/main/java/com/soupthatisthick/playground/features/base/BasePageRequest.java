@@ -16,7 +16,7 @@ public class BasePageRequest extends BaseRequest {
 	private Integer pageNumber = 0;
 
 	@NotNull
-	@Min(value = 0)
+	@Min(value = 1)
 	@ApiModelProperty(required = true, notes = "number of records to return")
 	private Integer pageSize = Integer.MAX_VALUE;
 

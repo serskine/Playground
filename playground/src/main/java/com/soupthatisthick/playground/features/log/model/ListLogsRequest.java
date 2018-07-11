@@ -26,7 +26,7 @@ public class ListLogsRequest extends BasePageRequest {
 	 * @param startTimeInclusive indicates the earliest possible log time (inclusive). If null then the oldest log will be included.
 	 * @param endTimeExclusive indicates the latest possible log time (exclusive). If null then the most recent log will be included.
 	 */
-	public ListLogsRequest(LocalDateTime startTimeInclusive, LocalDateTime endTimeExclusive) {
+	public ListLogsRequest(final LocalDateTime startTimeInclusive, final LocalDateTime endTimeExclusive) {
 		super();
 		this.startTimeInclusive = startTimeInclusive;
 		this.endTimeExclusive = endTimeExclusive;

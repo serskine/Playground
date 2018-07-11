@@ -9,6 +9,10 @@ public class PurgeLogsRequest extends BaseRequest {
 	@Nullable
 	private final LocalDateTime cutoff;
 
+	public PurgeLogsRequest() {
+		this(null);
+	}
+
 	/**
 	 * This will create a request logs before the specified time.
 	 * @param cutoff is the deadline (exclusive) you will delete logs until. If this is null then

@@ -1,9 +1,11 @@
 package com.soupthatisthick.playground.util.json;
 
 import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.soupthatisthick.playground.util.text.Text;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Collection;
 
 @SuppressWarnings("WeakerAccess")
@@ -52,6 +54,28 @@ public class JsonUtil {
             return includeAllMapper.readValue(json, collectionType);
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    public static JsonNode toJsonNode(Object object) {
+        if (object == null) {
+            return toJsonNodeFromJsonString(null);
+        } else if (object instanceof Serializable) {
+            return toJsonNodeFromJsonString(toJson(object));
+        } else {
+            return toJsonNodeFromJsonString(toJson(object.toString()));
+        }
+    }
+
+    public static JsonNode toJsonNodeFromJsonString(String value) {
+        try {
+            if (value==null) {
+                return null;
+            } else {
+                return includeAllMapper.readTree(value);
+            }
+        } catch (IOException e) {
+            throw new IllegalArgumentException(e);
         }
     }
 
