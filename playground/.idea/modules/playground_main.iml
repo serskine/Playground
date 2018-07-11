@@ -12,7 +12,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="Entities" value="1d3a66f9-85f1-4462-a163-29ebdcb81920" />
+        </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/../../src/main/resources/com/soupthatisthick/playground/config/persistance.xml" />
       </configuration>
     </facet>
