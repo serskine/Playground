@@ -46,6 +46,7 @@
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.8.9" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:2.8.9" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.9" level="project" />
+    <orderEntry type="library" name="Gradle: com.vladmihalcea:hibernate-types-52:2.2.2" level="project" />
     <orderEntry type="library" name="Gradle: uk.co.jemos.podam:podam:7.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: io.codearte.jfairy:jfairy:0.5.7" level="project" />
     <orderEntry type="library" name="Gradle: com.mashape.unirest:unirest-java:1.4.9" level="project" />

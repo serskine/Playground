@@ -18,6 +18,74 @@
     <pattern value="com.soupthatisthick.app.util.podam.ResourceUtil" method="getAsFile" />
     <pattern value="com.soupthatisthick.app.util.podam.ResourceUtil" method="copyResourceToTempFile" />
     <pattern value="com.soupthatisthick.app.util.podam.ResourceUtil" method="readResourceIntoString" />
+    <pattern value="com.soupthatisthick.playground.features.base.ErrorModel" method="getClassName" />
+    <pattern value="com.soupthatisthick.playground.features.base.ErrorModel" method="getCause" />
+    <pattern value="com.soupthatisthick.playground.features.base.ErrorModel" method="getMessage" />
+    <pattern value="com.soupthatisthick.playground.features.base.ErrorModel" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.LogEntry" method="getCreated" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.LogEntry" method="getEndpoint" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.LogEntry" method="getRequest" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getParameterMap" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getAttributeMap" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getHeaderMap" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getLocales" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getServerName" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getScheme" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getProtocol" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getContentType" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getContentLength" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getCharacterEncoding" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="isRequestedSessionIdFromURL" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="isRequestedSessionIdFromCookie" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="isRequestedSessionIdValid" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getServletPath" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getRequestUrl" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getServerPort" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getRemoteAddress" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getRemoteHost" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getLocale" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="isSecure" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getRemotePort" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getLocalName" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getLocalAddress" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getLocalPort" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="isAsyncSupported" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getDispatcherType" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getRequestedSessionId" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getUserPrincipal" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getRemoteUser" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getQueryString" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getCookies" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getAuthType" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getPathContext" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getPathTranslated" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" method="getPathInfo" />
+    <pattern value="com.soupthatisthick.playground.features.log.model.HttpServletRequestSnapshot" />
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="javax.annotation.Nullable" />
+    <option name="myDefaultNotNull" value="org.jetbrains.annotations.NotNull" />
+    <option name="myNullables">
+      <value>
+        <list size="5">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="4">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+        </list>
+      </value>
+    </option>
   </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="javax.annotation.Nullable" />
